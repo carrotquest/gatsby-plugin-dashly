@@ -27,9 +27,9 @@ npm install --save gatsby-plugin-dashly
 
 ## How to use
 
-To integrate Dashly Livechat to your Gatsby site, you need to have an account with Dashly. [Sign up](https://dashly.io/panel/unauthorized/register/).
+To integrate [Live chat](https://www.dashly.io/live-chat/) and [Chatbots](https://www.dashly.io/custom-chatbot/) to your Gatsby site, you need to have an account with Dashly. [Sign up](https://dashly.io/panel/unauthorized/register/).
 
-Upon obtaining your `CRISP_WEBSITE_ID`, you need to modify your `gatsby-config.js` as follows:
+Upon obtaining your `DASHLY_ID`, you need to modify your `gatsby-config.js` as follows:
 
 ```js
 // In your gatsby-config.js
@@ -52,7 +52,7 @@ module.exports = {
 ### Track your pages visits for SPA
 
 ```js
-// gatsby-browser.js
+// In your gatsby-browser.js
 const isEnabledDashly = () => typeof dashly === `object`;
 
 exports.onRouteUpdate = ({ location }) => {
