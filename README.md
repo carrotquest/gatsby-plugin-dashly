@@ -2,7 +2,9 @@
 
 <img src="https://www.dashly.io/logos/en-logo.svg" alt="dashly logo" width="200"/>
 
-With [Dashly](https://www.dashly.io/) you can:
+To integrate [Dashly Conversational platform for business](https://www.dashly.io/) to your Gatsby website, you need to have an account with Dashly. [Sign up](https://www.dashly.io/panel/unauthorized/login/)
+
+With Dashly you can:
 
 1. Collect your users through all the channels including messengers. All users in one inbox, all channels in one user profile.
 2. Engage with every user on their terms. Chat, messengers, e-mail are in one user profile.  
