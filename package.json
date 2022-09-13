@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-dashly",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Gatsby plugin for Dashly",
   "main": "index.js",
   "scripts": {
