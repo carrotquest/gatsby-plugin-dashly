@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-dashly",
       options: {
-        carrotquestId: "DASHLY_ID",
+        dashlyId: "DASHLY_ID",
         mobileDelay: 2000, // Optional. Delay for mobile devices.
         desktopDelay: 500, // Optional. Delay for other devices.
       },
