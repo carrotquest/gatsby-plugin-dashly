@@ -3,10 +3,6 @@
   "version": "0.2.4",
   "description": "Gatsby plugin for Dashly",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build script setup\""
-  },
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -19,5 +15,23 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/carrotquest/gatsby-plugin-dashly"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "babel-preset-gatsby-package": "^2.24.0-next.0",
+    "cross-env": "^7.0.3"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.11.6",
+    "gatsby": "^4.0.0-next"
   }
 }
