@@ -18,7 +18,7 @@ exports.onRenderBody = ({ setHeadComponents }, { dashlyId, mobileDelay = 0, desk
   const scriptInnerHTML =
     `window.dashlyId = "${dashlyId}";` +
     `if (typeof dashly === "undefined") { function Build(name, args) { return function () { window.dashlyasync.push(name, arguments); }; } window.dashly = {}; window.dashlyasync = []; dashly.settings = {}; var m = [ "connect", "track", "identify", "auth", "open", "onReady", "addCallback", "removeCallback", "trackMessageInteraction", ]; for (var i = 0; i < m.length; i++) dashly[m[i]] = Build(m[i]); }` +
-    `function initDashly() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "//cdn.dashly.app/api.min.isolate.js"; var x = document.getElementsByTagName("head")[0]; x.appendChild(s); }` +
+    `function initDashly() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "//cdn.dashly.app/api.min.js"; var x = document.getElementsByTagName("head")[0]; x.appendChild(s); }` +
     delay;
 
   return setHeadComponents([<script key="gatsby-plugin-dashly" dangerouslySetInnerHTML={{ __html: scriptInnerHTML }} />]);
